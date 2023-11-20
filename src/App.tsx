@@ -1,5 +1,7 @@
-import "./App.css";
-import { TopBar } from "./components/topbar";
+import "@/App.css";
+
+import { GameCards } from "@/components/gamecards";
+import { TopBar } from "@/components/topbar";
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       className="container py-4"
     >
       <TopBar />
+      <div className="h-[300px]"/>
+      <GameCards />
     </div>
   );
 }
