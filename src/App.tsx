@@ -4,7 +4,7 @@ import { games } from "@/data/games";
 
 import { TopBar } from "@/components/topbar";
 import { GameCard } from "@/components/gamecard";
-import { MenuCards } from "./components/menucard";
+import { MenuCards } from "@/components/menucard";
 
 function App() {
   return (
