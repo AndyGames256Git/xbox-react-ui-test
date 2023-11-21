@@ -1,7 +1,10 @@
 import "@/App.css";
 
-import { GameCards } from "@/components/gamecards";
+import { games } from "@/data/games";
+
 import { TopBar } from "@/components/topbar";
+import { GameCard } from "@/components/gamecard";
+import { MenuCards } from "./components/menucard";
 
 function App() {
   return (
@@ -9,8 +12,18 @@ function App() {
       className="container py-4"
     >
       <TopBar />
-      <div className="h-[300px]"/>
-      <GameCards />
+
+      <div className="flex space-x-4 items-end h-[300px] overflow-x-auto">
+        {games.map((game, index) => (
+          <GameCard
+            key={index}
+            title={game.title}
+            imgSrc={game.imgSrc}
+          />
+        ))}
+      </div>
+
+      <MenuCards />
     </div>
   );
 }

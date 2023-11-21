@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Library,
   Search,
@@ -9,7 +10,7 @@ import {
   MicOff
 } from "lucide-react";
 
-import profileLogo from "@/assets/react.svg";
+import { profile } from "@/data/profile";
 
 import { formatHour } from "@/lib/utils";
 
@@ -18,7 +19,6 @@ import {
   AvatarImage,
 } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState } from "react";
 
 export const TopBar = () => {
   const [isMuted, setIsMuted] = useState(false);
@@ -31,30 +31,34 @@ export const TopBar = () => {
   });
 
   return (
-    <div className="flex items-center justify-between text-secondary">
+    <div className="flex items-center justify-between text-secondary mb-[280px]">
 
       <div className="flex items-center space-x-2">
         <Avatar className="h-12 w-12">
           <AvatarImage
             className="bg-primary"
-            src={profileLogo}
+            src={profile.profilePictureSrc}
           />
         </Avatar>
         <div>
           <div className="flex items-center space-x-2">
             <div className="text-lg">
-              BackFoward
+              {profile.gamertag}
             </div>
-            <Badge variant="secondary">
-              ULTIMATE
-            </Badge>
+            {
+              profile.hasGamePass
+              &&
+              <Badge variant="secondary">
+                ULTIMATE
+              </Badge>
+            }
           </div>
           <div className="flex items-center space-x-2">
             <Badge variant="secondary">
               G
             </Badge>
             <div>
-              21,337
+              {profile.points}
             </div>
           </div>
         </div>
@@ -93,7 +97,7 @@ export const TopBar = () => {
           {formatHour(date)}
         </div>
       </div>
-      
+
     </div>
   );
 }
