@@ -13,7 +13,7 @@ function App() {
     >
       <TopBar />
 
-      <div className="flex space-x-4 items-end h-[300px] overflow-x-auto">
+      <div className="flex space-x-4 items-end h-[300px] py-4 justify-between">
         {games.map((game, index) => (
           <GameCard
             key={index}
