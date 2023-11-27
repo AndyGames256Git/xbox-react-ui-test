@@ -3,8 +3,8 @@ import {
   Edit3,
 } from "lucide-react";
 
-import eliteController from "@/assets/elite-controller.jpg";
-import disneyBg from "@/assets/disney.png";
+import eliteController from "@/assets/elite-controller.webp";
+import disneyBg from "@/assets/disney.webp";
 
 export const MenuCards = () => {
   return (

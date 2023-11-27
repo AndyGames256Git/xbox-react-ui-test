@@ -1,4 +1,4 @@
-import profilePictureSrc from "@/assets/profile.png";
+import profilePictureSrc from "@/assets/profile.webp";
 
 export const profile = {
   gamertag: 'BackFoward',

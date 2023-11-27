@@ -5,7 +5,7 @@ export const games = [
   },
   {
     title: "Diablo IV",
-    imgSrc: "https://cdn.mobygames.com/covers/17161000-diablo-iv-playstation-4-front-cover.png",
+    imgSrc: "https://cdn.mobygames.com/covers/17161000-diablo-iv-playstation-4-front-cover.jpg",
   },
   {
     title: "Grand Theft Auto V",
