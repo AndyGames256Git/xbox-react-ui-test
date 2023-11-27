@@ -7,7 +7,7 @@ export const GameCard = ({
 }) => {
   return (
     <div
-      className="relative border-4 border-hidden rounded-lg w-[200px] h-[220px] transition-all group hover:w-[260px] hover:h-[286px] hover:border-solid hover:border-secondary"
+      className="relative border-4 border-hidden rounded-lg w-[200px] h-[200px] transition-all group hover:w-[250px] hover:h-[250px] hover:border-solid hover:border-secondary"
       style={{
         backgroundImage: `url("${imgSrc}")`,
         backgroundPosition: "top",
