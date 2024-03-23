@@ -75,3 +75,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .outlined {
+    @apply outline outline-transparent outline-2 outline-offset-4 hover:outline-secondary;
+  }
+}

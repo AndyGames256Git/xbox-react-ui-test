@@ -65,20 +65,20 @@ export const TopBar = () => {
       </div>
 
       <div>
-        <nav className="flex items-center text-secondary space-x-8 [&>a]:bg-primary/50 [&>a]:p-2 [&>a]:rounded-full">
-          <a className="border-transparent border-2 hover:border-solid hover:border-secondary" href="/">
+        <nav className="flex items-center text-secondary space-x-8 [&>a]:bg-primary/50 [&>a]:p-3 [&>a]:rounded-full">
+          <a className="outlined" href="/">
             <Library />
           </a>
-          <a className="border-transparent border-2 hover:border-solid hover:border-secondary" href="/">
+          <a className="outlined" href="/">
             <AppWindow />
           </a>
-          <a className="border-transparent border-2 hover:border-solid hover:border-secondary" href="/">
+          <a className="outlined" href="/">
             <Gamepad />
           </a>
-          <a className="border-transparent border-2 hover:border-solid hover:border-secondary" href="/">
+          <a className="outlined" href="/">
             <Search />
           </a>
-          <a className="border-transparent border-2 hover:border-solid hover:border-secondary" href="/">
+          <a className="outlined" href="/">
             <Settings />
           </a>
         </nav>
@@ -86,7 +86,7 @@ export const TopBar = () => {
 
       <div className="flex items-center space-x-4 [&>div]:cursor-pointer">
         <div
-          onClick={(_e) => setIsMuted((isMuted) => !isMuted)}
+          onClick={() => setIsMuted((isMuted) => !isMuted)}
         >
           {isMuted ? <MicOff /> : <Mic />}
         </div>
