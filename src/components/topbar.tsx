@@ -48,7 +48,7 @@ export const TopBar = () => {
             {
               profile.hasGamePass
               &&
-              <Badge variant="secondary">
+              <Badge className="rounded-none p-0 px-1 font-bold" variant="secondary">
                 ULTIMATE
               </Badge>
             }
