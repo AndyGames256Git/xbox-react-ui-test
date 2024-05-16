@@ -1,6 +1,6 @@
 export const games = [
   {
-    title: "Halo Infinite",
+    title: "Testing lol!",
     imgSrc: "https://cdn.mobygames.com/covers/11143838-halo-infinite-campaign-windows-apps-front-cover.jpg",
   },
   {
