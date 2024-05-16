@@ -2,6 +2,13 @@ export const games = [
   {
     title: "Testing lol!",
     imgSrc: "https://cdn.mobygames.com/covers/11143838-halo-infinite-campaign-windows-apps-front-cover.jpg",
+    const imageLink = document.querySelector('a');
+
+imageLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.location.href = 'https://www.example.com';
+});
+
   },
   {
     title: "Diablo IV",
